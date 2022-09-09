@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 //const uri = process.env.ATLAS_URI;
-const uri = 'mongodb+srv://kritiv:Vaishnavi1234@cluster0.f5j9veu.mongodb.net/?retryWrites=true&w=majority'
+const uri = ''
 mongoose.connect(uri);
 const connection = mongoose.connection;
 connection.once('open', () => {
